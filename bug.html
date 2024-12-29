@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Incorrect way to get the innerHTML (common mistake):
+    document.getElementById('myDiv').innerHTML = document.getElementById('myDiv').innerHTML + "<p>Added text</p>";
+    // This is inefficient and can lead to unexpected behaviors due to multiple DOM manipulations
+  </script>
+</body>
+</html>
