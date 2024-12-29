@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Efficient way to update innerHTML:
+    let myDiv = document.getElementById('myDiv');
+    let originalText = myDiv.innerHTML;
+    let newText = originalText + "<p>Added text</p>";
+    myDiv.innerHTML = newText; 
+  </script>
+</body>
+</html>
